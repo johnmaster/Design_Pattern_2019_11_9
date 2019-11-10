@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class ICar
+class Food
 {
 public:
 	virtual string Name() = 0;

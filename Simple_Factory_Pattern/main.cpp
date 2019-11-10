@@ -10,20 +10,20 @@
 int main()
 {
 	Factory* pFactory = new Factory();
-	ICar* pCar = pFactory->CreateCar(Factory::BENZ_CAR);
-	cout << pCar->Name() << endl;
+	Food* pFood = pFactory->CreateCar(Factory::HAMBURGER);
+	cout << pFood->Name() << endl;
 
-	SAFE_DELETE(pCar);
+	SAFE_DELETE(pFood);
 	
-	pCar = pFactory->CreateCar(Factory::BMW_CAR);
-	cout << pCar->Name() << endl;
+	pFood = pFactory->CreateCar(Factory::CHIPS);
+	cout << pFood->Name() << endl;
 
-	SAFE_DELETE(pCar);
+	SAFE_DELETE(pFood);
 
-	pCar = pFactory->CreateCar(Factory::AUDI_CAR);
-	cout << pCar->Name() << endl;
+	pFood = pFactory->CreateCar(Factory::CHICKENROLLS);
+	cout << pFood->Name() << endl;
 
-	SAFE_DELETE(pCar);
+	SAFE_DELETE(pFood);
 
 	getchar();
 

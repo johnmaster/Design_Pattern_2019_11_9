@@ -5,30 +5,30 @@
 
 #include "product.h"
 
-class BenzCar : public ICar
+class Hamburger : public Food
 {
 public:
 	string Name()
 	{
-		return "Benz Car";
+		return "Hamburger";
 	}
 };
 
-class BmwCar : public ICar
+class Chips : public Food
 {
 public :
 	string Name()
 	{
-		return "Bmw Car";
+		return "Chips";
 	}
 };
 
-class AudiCar : public ICar
+class ChickenRolls : public Food
 {
 public:
 	string Name()
 	{
-		return "Audi_Car";
+		return "ChickenRolls";
 	}
 };
 

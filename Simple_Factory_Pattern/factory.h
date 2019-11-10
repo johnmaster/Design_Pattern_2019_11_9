@@ -8,31 +8,30 @@
 class Factory
 {
 public:
-	enum CAR_TYPE
+	enum FOOD_TYPE
 	{
-		BENZ_CAR,
-		BMW_CAR,
-		AUDI_CAR
+		HAMBURGER,
+		CHIPS,
+		CHICKENROLLS
 	};
-	
-	ICar* CreateCar(CAR_TYPE type)
+	Food* CreateCar(FOOD_TYPE type)
 	{
-		ICar* pCar = NULL;
+		Food* pFood = NULL;
 		switch (type)
 		{
-		case CAR_TYPE::BENZ_CAR:
-			pCar = new BenzCar();
+		case FOOD_TYPE::HAMBURGER:
+			pFood = new Hamburger();
 			break;
-		case CAR_TYPE::BMW_CAR:
-			pCar = new BmwCar();
+		case FOOD_TYPE::CHIPS:
+			pFood = new Chips();
 			break;
-		case CAR_TYPE::AUDI_CAR:
-			pCar = new AudiCar();
+		case FOOD_TYPE::CHICKENROLLS:
+			pFood = new ChickenRolls();
 			break;
 		default:
 			break;
 		}
-		return pCar;
+		return pFood;
 	}
 };
 
